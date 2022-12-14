@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <UsersComp />
-  </div>
+    <router-link to="/users"></router-link>
+    
+    <div class="container mt-3">
+      <router-view />
+    </div>
+  </div> 
 </template>
 
 <script>
-import UsersComp from './components/UsersComp.vue'
 
 export default {
   name: 'App',
-  components: {
-    UsersComp
-  }
-}
+};
 </script>
 
 <style>
@@ -20,7 +20,7 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
   margin-top: 60px;
 }
